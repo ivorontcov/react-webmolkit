@@ -26,6 +26,9 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      { test: /\.svg$/, loader: "raw-loader" },
+      { test: /\.ds$/, loader: "raw-loader" },
+      { test: /\.onto$/, loader: "raw-loader" },
     ],
   },
   resolve: {
